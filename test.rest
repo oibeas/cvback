@@ -1,4 +1,5 @@
 GET http://localhost:3000/api/proyectos
+access-token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c3VhcmlvIjoiT2liZWFzIiwiY3JlYXRlZEF0IjoxNjU0NjE4ODg1LCJleHBpcmVkQXQiOjE2NTQ2MTkxODV9.0oypL3dySbt10_1k_RREAYSqyVrp68ALCvd1aR98Whc
 
 ###
 
@@ -30,3 +31,6 @@ Content-Type: application/json
 
 DELETE http://localhost:3000/api/proyectos/629f23cab6e1e1202654e7b2
 
+###
+###Para generar un token
+GET http://localhost:3000/api/token

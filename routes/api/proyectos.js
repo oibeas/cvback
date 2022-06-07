@@ -6,6 +6,7 @@ const Proyecto = require('../../models/proyecto');
 //al llegar a /api/proyectos hacemos esto:
 //Es una promesa y la gestionamos con async/await y try/catch
 router.get('/', async (req, res) => {
+    console.log(req.payload);
     try {
         const proyectos = await Proyecto.find();
         res.json(proyectos);
