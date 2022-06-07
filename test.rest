@@ -1,5 +1,32 @@
-GET http://localhost:3000/
+GET http://localhost:3000/api/proyectos
 
 ###
 
-GET http://localhost:3000/api/proyectos
+POST http://localhost:3000/api/proyectos
+Content-Type: application/json
+
+{
+    "titulo": "Proyecto de prueba2",
+    "descripcion": "Esta es la descripcion",
+    "url": "http://www.google.es",
+    "cliente": "Google",
+    "url_cliente": "http://www.google.com/quiensomos"
+}
+
+###
+
+PUT http://localhost:3000/api/proyectos/629f27827fd3c718be2fb5c4
+Content-Type: application/json
+
+{
+    "titulo": "Proyecto EDITADO de nuevo",
+    "descripcion": "Esta es la descripcion EDITADA",
+    "url": "http://www.google.es",
+    "cliente": "Google",
+    "url_cliente": "http://www.google.com/quiensomos"
+}
+
+###
+
+DELETE http://localhost:3000/api/proyectos/629f23cab6e1e1202654e7b2
+

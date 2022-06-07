@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
 
+
 //Importamos el dotenv para los datos del puerto
 require('dotenv').config();
 require('./db');
@@ -12,6 +13,11 @@ require('./db');
 
 //requerimos el archivo api dentro de la carpeta routes para manejar estas rutas
 const apiRouter = require('./routes/api')
+
+
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }))
+
 
 //Creamos nuevas rutas
 app.use('/api', apiRouter);
