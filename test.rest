@@ -1,14 +1,15 @@
 GET http://localhost:3000/api/proyectos
-access-token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c3VhcmlvIjoiT2liZWFzIiwiY3JlYXRlZEF0IjoxNjU0NjIwODM1LCJleHBpcmVkQXQiOjE2NTQ2MjExMzV9.EVo5etj-YgRaFdgJwrajy1g5bSlL9XoJCGYolPJsBkE
+access-token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c3VhcmlvIjoiT2liZWFzIiwiY3JlYXRlZEF0IjoxNjU0NzA1ODA5LCJleHBpcmVkQXQiOjE2NTQ3MDY3MDl9.KyGTHFyWxZhj7ihR_ohTXdXFX9Zcl_EmfaxeppD-Gsw
 
 ###GET por categoria
-GET http://localhost:3000/api/proyectos/angular
+GET http://localhost:3000/api/proyectos/categoria/angular
 access-token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c3VhcmlvIjoiT2liZWFzIiwiY3JlYXRlZEF0IjoxNjU0NjIwODM1LCJleHBpcmVkQXQiOjE2NTQ2MjExMzV9.EVo5etj-YgRaFdgJwrajy1g5bSlL9XoJCGYolPJsBkE
 
+###GET proyecto por ID
+GET http://localhost:3000/api/proyectos/62a0662a6f502a490a03e438
+access-token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c3VhcmlvIjoiT2liZWFzIiwiY3JlYXRlZEF0IjoxNjU0NzA1ODA5LCJleHBpcmVkQXQiOjE2NTQ3MDY3MDl9.KyGTHFyWxZhj7ihR_ohTXdXFX9Zcl_EmfaxeppD-Gsw
 
-
-###
-
+###POST de un proyecto
 POST http://localhost:3000/api/proyectos
 Content-Type: application/json
 access-token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c3VhcmlvIjoiT2liZWFzIiwiY3JlYXRlZEF0IjoxNjU0NjIwNDg3LCJleHBpcmVkQXQiOjE2NTQ2MjA3ODd9.6SCUYRQI-Zzmt1MfyfSzfOvLI7prxwXA8lNUu1gEuBA
@@ -22,8 +23,7 @@ access-token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c3VhcmlvIjoiT2liZWFzIiwiY
     "categoria": "angular"
 }
 
-###
-
+### Modificacion de un proyecto por su ID
 PUT http://localhost:3000/api/proyectos/629f27827fd3c718be2fb5c4
 Content-Type: application/json
 access-token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c3VhcmlvIjoiT2liZWFzIiwiY3JlYXRlZEF0IjoxNjU0NjIwODM1LCJleHBpcmVkQXQiOjE2NTQ2MjExMzV9.EVo5etj-YgRaFdgJwrajy1g5bSlL9XoJCGYolPJsBkE
@@ -34,11 +34,10 @@ access-token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c3VhcmlvIjoiT2liZWFzIiwiY
     "url": "http://www.google.es",
     "cliente": "Google",
     "url_cliente": "http://www.google.com/quiensomos",
-    "categoria": "wordpress"
+    "categoria": "nodejs"
 }
 
-###
-
+###ELIMINAR UN PROYECTO POR SU ID
 DELETE http://localhost:3000/api/proyectos/629f23cab6e1e1202654e7b2
 
 ###
