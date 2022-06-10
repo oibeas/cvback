@@ -1,5 +1,5 @@
 GET http://localhost:3000/api/proyectos
-access-token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c3VhcmlvIjoiT2liZWFzIiwiY3JlYXRlZEF0IjoxNjU0NzA1ODA5LCJleHBpcmVkQXQiOjE2NTQ3MDY3MDl9.KyGTHFyWxZhj7ihR_ohTXdXFX9Zcl_EmfaxeppD-Gsw
+access-token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c3VhcmlvIjoiT2liZWFzIiwiY3JlYXRlZEF0IjoxNjU0ODU4NzM4LCJleHBpcmVkQXQiOjE2NTQ4NTk2Mzh9.zu37N4Ut8FcP1w-vF7finf4kj6YObwTQVUzSofi70l8
 
 ###GET por categoria
 GET http://localhost:3000/api/proyectos/categoria/angular
@@ -38,7 +38,8 @@ access-token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c3VhcmlvIjoiT2liZWFzIiwiY
 }
 
 ###ELIMINAR UN PROYECTO POR SU ID
-DELETE http://localhost:3000/api/proyectos/629f23cab6e1e1202654e7b2
+DELETE http://localhost:3000/api/proyectos/62a31ad90a4f62da54daa76d
+access-token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c3VhcmlvIjoiT2liZWFzIiwiY3JlYXRlZEF0IjoxNjU0ODU3MjQxLCJleHBpcmVkQXQiOjE2NTQ4NTgxNDF9.H_DJg1lLSDR9mtgZveCiGvpYKpGaJu2BGF9yujOC-lU
 
 ###
 ###Para generar un token

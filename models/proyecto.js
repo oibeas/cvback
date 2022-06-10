@@ -10,7 +10,8 @@ let proyectoSchema = new Schema({
     categoria: {
         type: String,
         enum: ['angular', 'wordpress', 'nodejs', 'frontend', 'backend']
-    }
+    },
+    imagen: String
 });
 
 module.exports = mongoose.model('Proyecto', proyectoSchema);

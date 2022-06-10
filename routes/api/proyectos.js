@@ -8,8 +8,12 @@ const Proyecto = require('../../models/proyecto');
 router.get('/', async (req, res) => {
     console.log(req.payload);
     try {
-        const proyectos = await Proyecto.find();
-        res.json(proyectos);
+        const proyectos = await Proyecto.find().lean();
+        const arrMap = proyectos.map(proyecto => {
+            let imagen = proyecto.imagen ? proyecto.imagen.substring(proyecto.imagen.indexOf('/') + 1) : '';
+            return { ...proyecto, imagen: imagen }
+        });
+        res.json(arrMap);
     } catch (err) {
         res.status(503).json({ 'error': err });
     }
